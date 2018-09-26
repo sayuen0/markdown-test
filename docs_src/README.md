@@ -15,6 +15,6 @@
 
 ゼータ函数とは
 
-$$\begin{aligned} \zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}} \end{aligned}$$
+$$\zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}}$$
 
 で定められる函数である。
