@@ -11,8 +11,8 @@ ${ X }$を集合、${ \mathscr{F}\subset 2^{X}, \neq \emptyset }$は以下を満
 
 このとき${ \mathscr{F} }$を${ X }$のフィルター（filter）と呼ぶ。
 
-$$
+$${
 \zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}}
-$$
+}$$
 
 $$ a $$
