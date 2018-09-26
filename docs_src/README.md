@@ -1,18 +1,18 @@
 # Introduction
 
-$a$
+**定義**：$${ X }$$を集合、$${ \mathscr{F}\subset 2^{X}, \neq \emptyset }$$は以下を満たすとする。
 
-**Definition:**
-${ X }$を集合、${ \mathscr{F}\subset 2^{X}, \neq \emptyset }$は以下を満たすとする。
+１．$${ \emptyset \notin \mathscr{F} }$$である。
 
-* ${ \emptyset \notin \mathscr{F} }$
-* ${ V\in\mathscr{F}, V\subset W \Longrightarrow W\in\mathscr{F} }$
-* ${ V, W\in\mathscr{F} \Longrightarrow V\cap W\in\mathscr{F} }$
+２．$${ V\in\mathscr{F}, V\subset W }$$なら$${ W\in\mathscr{F} }$$である。
 
-このとき${ \mathscr{F} }$を${ X }$のフィルター（filter）と呼ぶ。
+３．$${ V, W\in\mathscr{F} }$$なら$${ \Longrightarrow V\cap W\in\mathscr{F} }$$である。
 
-$${
-\zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}}
-}$$
+このとき$${ \mathscr{F} }$$を$${ X }$$のフィルター（filter）と呼ぶ。
 
-$$ a $$
+
+ゼータ函数とは
+
+$${ \zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}} }$$
+
+である。
