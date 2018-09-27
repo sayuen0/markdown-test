@@ -5,7 +5,7 @@
 VSCode+KaTeXにより高速なプレビューを見ながら$${ x^{2}+y^{2}=1 }$$のようなインライン数式から
 
 $$
-\displaystyle \Gamma( z )=\int_{0}^{\infty}s^{z-1}e^{-t}\mathrm{d}t
+\displaystyle \Gamma( z )=\int_{0}^{\infty}t^{z-1}e^{-t}\mathrm{d}t
 $$
 
 のような別行立て数式を含むmarkdown文章を作成することができます。
