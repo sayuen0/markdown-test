@@ -1,3 +1,8 @@
 {
+	"title": "収束空間",
+	"description": "収束空間について説明します",
+	"author": "mathmathniconico",
+	"language": "ja",
+
 	"plugins": ["katex"]
 }

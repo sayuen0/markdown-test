@@ -1,22 +1,14 @@
-# Introduction
+# このノートについて
 
-**定義**：$${ X }$$を集合、$${ \mathscr{F}\subset 2^{X}, \neq \emptyset }$$は以下を満たすとする。
+このノートはGitHub+GitBook+VSCode+KaTeXのテストを目的として作りました。
 
-１．$${ \emptyset \notin \mathscr{F} }$$である。
+VSCode+KaTeXにより高速なプレビューを見ながら$${ x^{2}+y^{2}=1 }$$のようなインライン数式から
 
-２．$${ V\in\mathscr{F}, V\subset W \Longrightarrow W\in\mathscr{F} }$$が成り立つ。
+$$\displaystyle \Gamma( z )=\int_{0}^{\infty}s^{z-1}e^{-t}\mathrm{d}t$$
+のような別行立て数式を含むmarkdown文章を作成することができます。
 
-３．$${ V, W\in\mathscr{F} \Longrightarrow V\cap W\in\mathscr{F} }$$が成り立つ。
+どちらも`$$`による解釈（クソ仕様）なので先頭に`$$`を置くと必ずディスプレイモードになります。
 
-このとき$${ \mathscr{F} }$$を$${ X }$$のフィルター（filter）と呼ぶ。
+左のメニューはGitBookを利用して作りました。簡単にセットアップできて、たぶんスタイルシートを弄れば自由に作れると思います。現状、メニューに数式を用いることは出来ません。
 
-
-## ゼータ函数
-
-ゼータ函数とは
-
-$$
-\displaystyle \zeta( s )=\sum_{n=1}^{\infty}\frac{1}{n^{s}}.
-$$
-
-で定められる函数である。
+KaTeXはとても高速ですが、あまり自由度は高くないです。可換図式とか書けるようになればいいなと思っています。
