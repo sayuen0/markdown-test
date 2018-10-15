@@ -1,18 +1,21 @@
+<!--
+    フィルターの大小、prefilterのfiner/coarser、フィルターのwedge積、prefilterのvel積、フィルターのvel積、フィルター化
+-->
 ## フィルターの大小
 まずはフィルターの大小を言い換えよう。
 
 **命題**
 ${ \mathscr{F}, \mathscr{G}\subset 2^{X} }$をフィルターとする。以下は同値である。
 
-* ${ \mathscr{F}\subset\mathscr{G} }$である。
-* 任意の${ F\in\mathscr{F} }$について、ある${ G\in\mathscr{G} }$が存在して${ G\subset F }$が成り立つ。
+- ${ \mathscr{F}\subset\mathscr{G} }$である。
+- 任意の${ F\in\mathscr{F} }$について、ある${ G\in\mathscr{G} }$が存在して${ G\subset F }$が成り立つ。
 
 上から下は全ての集合族で成り立つので自明である。一方で下から上はフィルターの性質による。つまり下の条件の方が強いため、これをprefilterに対する大小として採用しよう。
 
 **定義**
 ${ \mathscr{A}, \mathscr{B}\subset 2^{X} }$をprefilterとする。このとき関係${ \mathscr{A}\dashv\mathscr{B} }$を、
 
-* 「任意の${ A\in\mathscr{A} }$について、ある${ B\in\mathscr{B} }$が存在して${ B\subset A }$が成り立つ」
+- 「任意の${ A\in\mathscr{A} }$について、ある${ B\in\mathscr{B} }$が存在して${ B\subset A }$が成り立つ」
 
 で定める。このとき${ \mathscr{B} }$は${ \mathscr{A} }$より細かい（finer）、あるいは${ \mathscr{A} }$は${ \mathscr{B} }$より粗い（coarser）と言う。
 
@@ -21,8 +24,8 @@ ${ \mathscr{A}, \mathscr{B}\subset 2^{X} }$をprefilterとする。このとき�
 **命題**
 ${ \mathscr{A}, \mathscr{B}\subset 2^{X} }$をprefilterとする。以下は同値である。
 
-* ${ \mathscr{A}\dashv\mathscr{B} }$である。
-* ${ \langle \mathscr{A} \rangle\subset \langle \mathscr{B} \rangle }$である。
+- ${ \mathscr{A}\dashv\mathscr{B} }$である。
+- ${ \langle \mathscr{A} \rangle\subset \langle \mathscr{B} \rangle }$である。
 
 ちなみに関係${ \dashv }$は反射的（${ \mathscr{A}\dashv\mathscr{A} }$）かつ推移的（${ \mathscr{A}\dashv\mathscr{B}, \mathscr{B}\dashv\mathscr{C} }$なら${ \mathscr{A}\dashv\mathscr{C} }$）である。よって関係${ \sim }$を${ \mathscr{A}\dashv\mathscr{B} }$かつ${ \mathscr{B}\dashv\mathscr{A} }$のとき（つまり${ \langle \mathscr{A} \rangle=\langle \mathscr{B} \rangle }$のときに）${ \mathscr{A}\sim\mathscr{B} }$と定めれば、これはprefilterに対する同値関係を与える。
 
@@ -35,7 +38,7 @@ $$
 \displaystyle \begin{alignedat}{2} \mathscr{F}\wedge\mathscr{G}&:=\mathscr{F}\cap\mathscr{G}, &\qquad \bigwedge_{\lambda\in\Lambda}\mathscr{F}_{\lambda}&:=\bigcap_{\lambda\in\Lambda}\mathscr{F}_{\lambda} \end{alignedat}
 $$
 
-をフィルターのwedge積と呼ぶ。
+をフィルターのwedge積と呼ぶ。（次のvel積との対比で定義するが、分かり易さを踏まえて以降は共通部分の記号を用いる。）
 
 続いて、より細かいフィルターを作る方法について考える。こちらの方が重要であり、一般に存在するとは限らない。
 
@@ -57,11 +60,24 @@ ${ \mathscr{F}\vee\mathscr{G} }$がフィルターであることを示すには
 **定義**
 上記の${ \mathscr{A}\vee\mathscr{B} }$をprefilterのvel積と呼ぶ。同様に${ \mathscr{F}\vee\mathscr{G} }$はフィルターのvel積と呼ぶ。
 
-* prefilterのvel積は一般に包含順序に関する上限を与えるとは限らない。（ちなみに関係${ \dashv }$は順序ではない。）
+- prefilterのvel積は一般に包含順序に関する上限を与えるとは限らない。（ちなみに関係${ \dashv }$は順序ではない。）
+
+prefilterのvel積は生成と可換になる。
+
+**命題**
+${ \mathscr{A}, \mathscr{B}\subset 2^{X} }$はprefilterとする。このとき
+
+$$
+\displaystyle \langle \mathscr{A} \rangle\vee\langle \mathscr{B} \rangle=\langle \mathscr{A}\vee\mathscr{B} \rangle
+$$
+
+が成り立つ。
+
+（証明）${ \mathscr{A}, \mathscr{B}\subset\mathscr{A}\vee\mathscr{B}\subset \langle \mathscr{A}\vee\mathscr{B} \rangle }$より、最小性から${ \langle \mathscr{A} \rangle, \langle \mathscr{B} \rangle\subset\langle \mathscr{A}\vee\mathscr{B} \rangle }$となる。よって${ \langle \mathscr{A} \rangle\vee\langle \mathscr{B} \rangle\subset\langle \mathscr{A}\vee\mathscr{B} \rangle }$も従う。逆も同様に${ \mathscr{A}\vee\mathscr{B}\subset\langle \mathscr{A} \rangle\vee\langle \mathscr{B} \rangle }$から従う。${ \square }$
 
 もう一つ細かいフィルターを与える方法について紹介しておく。
 
-**命題**
+**補題**
 ${ \mathscr{A}\subset 2^{X} }$をprefilterとする。${ S\subset X }$について${ S\notin\mathscr{A} }$であるとする。
 
 $$

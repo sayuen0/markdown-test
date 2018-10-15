@@ -1,4 +1,7 @@
-## フィルターとは
+<!--
+    フィルター、フレシェフィルター、prefilter、prefilterが生成するfilter、単項フィルター、点フィルター
+-->
+## フィルターとprefilter
 まず始めにフィルターを定義する。本稿では集合上のフィルターを扱い、一般に真のフィルターと呼ばれるものを考える。
 
 **定義**
@@ -30,7 +33,7 @@ ${ X }$を無限集合とする。${ X\setminus S }$が有限集合となるよ�
 **注意**
 本稿ではprefilterと書くが、普通はフィルター基（filter base）と呼ぶ。prefilterという語を採用した理由は、filterとfilter baseでは個人的に視認性が悪いからである。prefilterと調べても出てこないので悪しからず。
 
-* filterはprefilterである。
+- filterはprefilterである。
 
 **命題**
 ${ \mathscr{B}\subset 2^{X} }$はprefilterとする。このとき${ \mathscr{B} }$を含む最小のフィルターが存在する。
@@ -54,7 +57,7 @@ $$
 
 で実現される。
 
-* filterはprefilterとして生成するフィルターと等しい。
+- filterはprefilterとして生成するフィルターと等しい。
 
 **定義**
 部分集合${ A\subset X, \neq \emptyset }$は空でないとする。このとき${ \langle A \rangle:=\langle \lbrace A \rbrace \rangle }$で表されるフィルターを単項フィルター（principal filter）と呼ぶ。特に${ x\in X }$について${ A=\lbrace x \rbrace }$のとき${ \langle x \rangle:=\langle \lbrace x \rbrace \rangle=\langle \lbrace \lbrace x \rbrace \rbrace \rangle }$を点フィルター（point filter）と呼ぶ。

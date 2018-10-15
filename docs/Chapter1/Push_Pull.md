@@ -1,3 +1,6 @@
+<!--
+    フィルターのpush-forward、フィルターのpull-back
+-->
 ## フィルターのpush-forwardとpull-back
 集合間の写像が与えられたとき、定義域のフィルターを値域へ押し出したり、あるいは値域のフィルターを定義域へ引き戻したりする操作を考えたくなる。このような操作はフィルターの生成を用いて定義されるが、自然な条件で自然な対応が付く。
 
@@ -41,7 +44,7 @@ $$
 
 を${ \mathscr{G} }$のpull-backと呼ぶ。
 
-* pull-backが定義できる${ \mathscr{G} }$には条件がある。
+- pull-backが定義できる${ \mathscr{G} }$には条件がある。
 
 以下でこれらの性質を示す。まずフィルターの生成という観点から言うと、push-forwardは生成について可換である。
 
@@ -68,6 +71,16 @@ $$
 が成り立つ。
 
 （証明）${ \mathscr{F}\subset 2^{X} }$を${ X }$のフィルターとする。${ ( g\circ f )_{\ast}\mathscr{F}=g_{\ast}( f_{\ast}\mathscr{F} ) }$を示せば良い。左辺から元を取り${ F\in( g\circ f )_{\ast}\mathscr{F} }$とする。ある${ G\in\mathscr{F} }$が存在して${ g\circ f( G )\subset F }$が成り立つ。${ g\circ f( G )=g( f( G ) ) }$だから${ f( G )\in f( \mathscr{F} )\subset f_{\ast}\mathscr{F} }$より${ F\in g_{\ast}( f_{\ast}( \mathscr{F} ) ) }$を得る。逆に${ F\in g_{\ast}( f_{\ast}\mathscr{F} ) }$とすると、ある${ G\in f_{\ast}\mathscr{F} }$が存在して${ g( G )\subset F }$が成り立つ。同様にある${ H\in\mathscr{F} }$が存在して${ f( H )\subset G }$が成り立つから、${ ( g\circ f )( H )\subset g( G )\subset F }$を得る。故に${ F\in ( g\circ f )_{\ast}\mathscr{F} }$となる。${ \square }$
+
+push-forwardとpull-backの間には以下の関係がある。
+
+**命題**
+${ f\colon X\rightarrow Y }$を写像とする。${ \mathscr{F}\subset 2^{X}, \mathscr{G}\subset 2^{Y} }$を${ X, Y }$のフィルターとする。以下が成り立つ。
+
+1. ${ f_{\ast}\mathscr{F} }$のpull-backは常に定義できて${ \mathscr{F}\subset f^{\ast}( f_{\ast}\mathscr{F} ) }$を満たす。
+2. 任意の${ G\in\mathscr{G} }$が${ f^{-1}( G )\neq\emptyset }$を満たすなら（${ \mathscr{G} }$のpull-backが定義できるなら）${ \mathscr{G}\subset f_{\ast}( f^{\ast}\mathscr{G} ) }$が成り立つ。
+
+（証明）上は自明。下は${ G\in\mathscr{G} }$に対し、${ f( f^{-1}( G ) )\subset G }$より${ G\in f_{\ast}( f^{\ast}\mathscr{G} ) }$を得る。${ \square }$
 
 写像が全射のときpush-forwardはフィルターの像と一致する。
 
