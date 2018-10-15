@@ -4,5 +4,8 @@
 	"author": "mathmathniconico",
 	"language": "ja",
 
-	"plugins": ["katex@git+https://github.com/gaoxiaosong/plugin-katex.git"]
+	"plugins": [
+		"katex@git+https://github.com/gaoxiaosong/plugin-katex.git"
+	]
+
 }
