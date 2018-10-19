@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>フィルターのpush-forwardとpullback · 収束空間</title>
+        <title>push-forwardとpull-back · 収束空間</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -145,7 +145,7 @@
                 <a href="Push_Pull.html">
             
                     
-                    フィルターのpush-forwardとpullback
+                    push-forwardとpull-back
             
                 </a>
             
@@ -202,7 +202,7 @@
                 <span>
             
                     
-                    収束空間
+                    収束空間の基礎
             
                 </span>
             
@@ -224,6 +224,32 @@
             
         </li>
     
+        <li class="chapter " data-level="2.2.2" data-path="../Chapter2/Topological.html">
+            
+                <a href="../Chapter2/Topological.html">
+            
+                    
+                    トポロジカルな収束構造
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.3" data-path="../Chapter2/Open_Closed.html">
+            
+                <a href="../Chapter2/Open_Closed.html">
+            
+                    
+                    位相的概念とその性質
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
@@ -236,9 +262,22 @@
         
         
     
-        <li class="chapter " data-level="3.1" data-path="../References.html">
+        <li class="chapter " data-level="3.1" data-path="../Miscs/OpenProblems.html">
             
-                <a href="../References.html">
+                <a href="../Miscs/OpenProblems.html">
+            
+                    
+                    未解決問題集
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../Miscs/References.html">
+            
+                <a href="../Miscs/References.html">
             
                     
                     参考文献
@@ -279,7 +318,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >フィルターのpush-forwardとpullback</a>
+        <a href=".." >push-forwardとpull-back</a>
     </h1>
 </div>
 
@@ -297,7 +336,7 @@
                                 <!--
     フィルターのpush-forward、フィルターのpull-back
 -->
-<h2 id="&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x306E;push-forward&#x3068;pull-back">&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x306E;push-forward&#x3068;pull-back</h2>
+<h2 id="push-forward&#x3068;pull-back">push-forward&#x3068;pull-back</h2>
 <p>&#x96C6;&#x5408;&#x9593;&#x306E;&#x5199;&#x50CF;&#x304C;&#x4E0E;&#x3048;&#x3089;&#x308C;&#x305F;&#x3068;&#x304D;&#x3001;&#x5B9A;&#x7FA9;&#x57DF;&#x306E;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x3092;&#x5024;&#x57DF;&#x3078;&#x62BC;&#x3057;&#x51FA;&#x3057;&#x305F;&#x308A;&#x3001;&#x3042;&#x308B;&#x3044;&#x306F;&#x5024;&#x57DF;&#x306E;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x3092;&#x5B9A;&#x7FA9;&#x57DF;&#x3078;&#x5F15;&#x304D;&#x623B;&#x3057;&#x305F;&#x308A;&#x3059;&#x308B;&#x64CD;&#x4F5C;&#x3092;&#x8003;&#x3048;&#x305F;&#x304F;&#x306A;&#x308B;&#x3002;&#x3053;&#x306E;&#x3088;&#x3046;&#x306A;&#x64CD;&#x4F5C;&#x306F;&#x30D5;&#x30A3;&#x30EB;&#x30BF;&#x30FC;&#x306E;&#x751F;&#x6210;&#x3092;&#x7528;&#x3044;&#x3066;&#x5B9A;&#x7FA9;&#x3055;&#x308C;&#x308B;&#x304C;&#x3001;&#x81EA;&#x7136;&#x306A;&#x6761;&#x4EF6;&#x3067;&#x81EA;&#x7136;&#x306A;&#x5BFE;&#x5FDC;&#x304C;&#x4ED8;&#x304F;&#x3002;</p>
 <p><strong>&#x547D;&#x984C;</strong>
 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi><mo separator="true">,</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">{ X, Y }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathit" style="margin-right:0.22222em;">Y</span></span></span></span></span>&#x3092;&#x96C6;&#x5408;&#x3068;&#x3057;&#x3001;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="script">A</mi><mo>&#x2282;</mo><msup><mn>2</mn><mi>X</mi></msup></mrow><annotation encoding="application/x-tex">{ \mathscr{A}\subset 2^{X} }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.880431em;vertical-align:-0.0391em;"></span><span class="mord"><span class="mord"><span class="mord mathscr" style="margin-right:0.22925em;">A</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2282;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8413309999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathit mtight" style="margin-right:0.07847em;">X</span></span></span></span></span></span></span></span></span></span></span></span></span>&#x3092;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">{ X }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord"><span class="mord mathit" style="margin-right:0.07847em;">X</span></span></span></span></span>&#x306E;prefilter&#x3068;&#x3059;&#x308B;&#x3002;&#x5199;&#x50CF;<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>f</mi><mspace></mspace><mspace width="0.1111111111111111em"><mtext>&#x200B;</mtext><mo>:</mo><mspace width="0.3333333333333333em"><mi>X</mi><mo>&#x2192;</mo><mi>Y</mi></mspace></mspace></mrow><annotation encoding="application/x-tex">{ f\colon X\rightarrow Y }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathit" style="margin-right:0.10764em;">f</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111111111111111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mspace" style="margin-right:-0.16666666666666666em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333333333333333em;"></span><span class="mord mathit" style="margin-right:0.07847em;">X</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">&#x2192;</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mord mathit" style="margin-right:0.22222em;">Y</span></span></span></span></span>&#x306B;&#x3064;&#x3044;&#x3066;</p>
@@ -409,7 +448,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"フィルターのpush-forwardとpullback","level":"2.1.2","depth":2,"next":{"title":"フィルターの大小","level":"2.1.3","depth":2,"path":"Chapter1/Finer_Coarser.md","ref":"Chapter1/Finer_Coarser.md","articles":[]},"previous":{"title":"フィルターとprefilter","level":"2.1.1","depth":2,"path":"Chapter1/Filter.md","ref":"Chapter1/Filter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex@git+https://github.com/gaoxiaosong/plugin-katex.git"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mathmathniconico","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"収束空間","language":"ja","gitbook":"*","description":"収束空間について説明します"},"file":{"path":"Chapter1/Push_Pull.md","mtime":"2018-10-15T06:36:30.829Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-15T10:11:46.041Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"push-forwardとpull-back","level":"2.1.2","depth":2,"next":{"title":"フィルターの大小","level":"2.1.3","depth":2,"path":"Chapter1/Finer_Coarser.md","ref":"Chapter1/Finer_Coarser.md","articles":[]},"previous":{"title":"フィルターとprefilter","level":"2.1.1","depth":2,"path":"Chapter1/Filter.md","ref":"Chapter1/Filter.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex@git+https://github.com/gaoxiaosong/plugin-katex.git"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"katex":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"mathmathniconico","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"収束空間","language":"ja","gitbook":"*","description":"収束空間について説明します"},"file":{"path":"Chapter1/Push_Pull.md","mtime":"2018-10-17T15:50:36.960Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-19T10:10:00.041Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
